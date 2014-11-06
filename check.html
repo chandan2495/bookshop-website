@@ -1,0 +1,67 @@
+<html>
+<head>
+	<style type="text/css">
+	#square1{
+		width: 800px;
+		height:800px;
+		background-color: red;
+		-webkit-transition:-webkit-border-radius 5s;
+	}
+	#square2{
+		width: 600px;
+		height:200px;
+		background-color: black;
+		position: absolute;
+		margin-top: 300px;
+		margin-left:100px;
+
+	}
+	
+	#square3{
+		width: 100px;
+		height:100px;
+		background-color: yellow;
+		position: absolute;
+		margin-top: 50px;
+		margin-left:250px;
+
+	}
+
+	#square1:hover{
+		-webkit-border-radius: 80%;
+	-moz-border-radius: 80%;
+	border-radius: 80%;
+	}
+
+	#square2:hover{
+		-webkit-border-radius: 80%;
+	-moz-border-radius: 80%;
+	border-radius: 80%;
+	}
+	#square3:hover{
+		-webkit-border-radius: 80%;
+	-moz-border-radius: 80%;
+	border-radius: 80%;
+	}
+	</style>
+	<script>
+	 function change()
+	 {
+	 	var st=document.getElementById('square1');
+	 	st.style.color="green";
+	 }
+	</script>
+</head>
+
+
+<body>
+ <div id="square1" onmouseover="this.style.border-radius='80%';" onmouseout="this.style.border-radius='100%';">
+ 	<div id="square2">
+ 		<div id="square3">
+ 			<center><h1>Filtr</h1>
+ 		</div>
+ 	</div>
+ </div>
+</body>
+
+</html>
